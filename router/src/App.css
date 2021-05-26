@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+nav {
+  padding: 0 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.active-link {
+  font-weight: bold;
+  text-decoration: wavy;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
