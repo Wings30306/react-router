@@ -1,4 +1,4 @@
-import {Route, Switch, Link} from 'react-router-dom'
+import {Route, Switch, NavLink} from 'react-router-dom'
 import Test from "./Test"
 import Home from "./Home"
 import './App.css';
@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/test">Test</Link>
+        <NavLink exact activeClassName="active-link" to="/">Home</NavLink>
+        <NavLink exact activeClassName="active-link" to="/test">Test</NavLink>
       </nav>
       <Switch> 
         <Route exact path="/" component={Home}/>
